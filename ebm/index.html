@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>EBM</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-auto-animate>
+					<h1>Evidence based management</h1>
+				</section>
+				<section data-auto-animate>
+					<h1>Evidence based management</h1>
+					<h1><small>as empirical research cycle</small></h1>
+				</section>
+				<section data-markdown="ebm1.md"></section>
+				<section style="background-color: white;" data-markdown="ebm2.md"></section>
+				<section data-markdown="ebm3.md"></section>
+				<section>
+					<h1>How do you know that <b>this</b> is the right thing to build?</h1>
+				</section>
+				<section data-auto-animate style="text-align: left;">
+					<h1>How to do this?</h1>
+				</section>
+				<section data-auto-animate style="text-align: left;">
+					<h1>How to do this?</h1>
+					<h3>- Start to measure things.</h3>
+					<h3>- Embrace impact mapping to visualize the "Why".</h3>
+					<h3>(demo)</h3>
+				</section>
+				<section>
+					<q>One of the biggest micsonceptions about the role of a product manager is that they own the entire product and therefore can tell everyone what to build. Act this way, an you will only alienate the rest of your team. Product managers really own the "why" of what they are building.</q><br/> <br/>  - Melissa Perri, author of "Escaping the Build Trap"
+				</section>
+				<section>
+					Gains and Losses ?
+				</section>
+				<section data-auto-animate>
+					<h1>How do I find time to do this?</h1>
+				</section>
+				<section data-auto-animate>
+					<h1>How do I find time to do this?</h1>
+					<h2>Stop writing detailed user stories, even stop writing them at all!</h2>
+				</section>
+				<section data-auto-animate>
+					<h1>User story is a placeholder for conversation</h1>
+				</section>
+				<section data-auto-animate>
+					<h3>User story</h3>
+					<h4>As a delivery company, I want to have the customer's full postal address on packages so that I can deliver them correctly.</h4>
+				</section>
+				<section data-auto-animate>
+					<h3>User story</h3>
+					<h4>As a delivery company, I want to have the customer's full postal address on packages so that I can deliver them correctly.</h4>
+					<ul>
+						<li>Customers must provide a valid postal address</li>
+						<li>Shipping labales must carry a correctly formatted address</li>
+					</ul>
+				</section>
+				<section style="text-align: left;">
+					How to do this? <br/>
+					<ul>
+					<li>Deploy a change agent to dev team </li>
+					<li>Ask them to help you</li>
+					<li>Respect "A well-kept Product Backlog contains all the information needed for reporting" - from "Professional Product Owner" book.</li>
+				</ul>
+				<br/>
+				<br/>
+				The end
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
