@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Scaffolding</title>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!--1. Introduction-->
+			<section>
+				<section data-auto-animate>
+					<p>From 0 to production in a few minutes</p>
+					<aside class="notes">test note</aside>
+				</section>
+				<section data-auto-animate>
+					<p>From 0 to production in a few minutes</p>
+					<small>
+						<p>(almost)</p>
+					</small>
+				</section>
+			</section>
+			<!--2. Stuff we have to go through-->
+			<section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+					</ol>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+					</ol>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+					</ol>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+						<li>GH Workflow for continous integration</li>
+					</ol>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+						<li>GH Workflow for continous integration</li>
+					</ol>
+					<img style="position: fixed; top: 0; left: 0" src="images/ci3.png" />
+					<img style="position: fixed; top: 20px; left: 250px; transform: rotate(-20deg);"
+						src="images/c0.png" />
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+						<li>GH Workflow for continous integration</li>
+					</ol>
+					<img style="position: fixed; top: 0; left: 0" src="images/ci3.png" />
+					<img style="position: fixed; top: 20px; left: 250px; transform: rotate(-20deg);"
+						src="images/c0.png" />
+					<img style="position: fixed; top: 0; left: 50px; transform: rotate(-10deg)" src="images/ci2.png" />
+					<img style="position: fixed; top: 0; left: 100px; transform: rotate(15deg)" src="images/ci1.png" />
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+						<li>GH Workflow for continous integration</li>
+						<li>Authentication, Claims</li>
+					</ol>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+						<li>GH Workflow for continous integration</li>
+						<li>Authentication, Claims</li>
+						<li>Common stuff like tracing</li>
+					</ol>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+						<li>GH Workflow for continous integration</li>
+						<li>Authentication, Claims</li>
+						<li>Common stuff like tracing</li>
+						<li>Integration with sentry</li>
+					</ol>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+						<li>GH Workflow for continous integration</li>
+						<li>Authentication, Claims</li>
+						<li>Common stuff like tracing</li>
+						<li>Integration with sentry</li>
+						<li>App configuration</li>
+						<li>Compliance: Cloud armor (hello terraform again).</li>
+					</ol>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<div style="font-size: 400px; position: absolute; margin-left: 300px;">😭</div>
+					<p>
+						How do You start building a new service in Ignite?
+					<ol>
+						<li>Terraform for networking, certificates</li>
+						<li>Terraform and GH Workflows for deployment and hosting</li>
+						<li>GH Workflow for continous integration</li>
+						<li>Authentication, Claims</li>
+						<li>Common stuff like tracing</li>
+						<li>Integration with sentry</li>
+						<li>App configuration</li>
+						<li>Compliance: Cloud armor (hello terraform again).</li>
+					</ol>
+					</p>
+				</section>
+			</section>
+			<section data-auto-animate>
+				<section data-auto-animate>
+					Some ways of handling that:
+					<ol>
+						<li>Copy and paste and manual changes afterwards</li>
+						<li>Boilerplate (GO)</li>
+						<li>Scaffolding</li>
+					</ol>
+					<small style="opacity: 0;">
+						<q>
+							Scaffold is any temporary elevated or suspended work surface used to support workers and/or
+							materials.</q>
+						<br />
+						<div style="text-align: right;">- Princton University Dictionary.</div>
+					</small>
+				</section>
+				<section data-auto-animate>
+					Some ways of handling that:
+					<ol>
+						<li>Copy and paste and manual changes afterwards</li>
+						<li>Boilerplate (GO)</li>
+						<li>Scaffolding</li>
+					</ol>
+					<small>
+						<q>
+							Scaffold is any temporary elevated or suspended work surface used to support workers and/or
+							materials.</q>
+						<br />
+						<div style="text-align: right;">- Princton University Dictionary.</div>
+					</small>
+				</section>
+				<section data-auto-animate>
+					<p>Demo</p>
+					<aside class="notes">test note</aside>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<p>Some Drawbacks:</p>
+					<aside class="notes">test note</aside>
+				</section>
+				<section data-auto-animate>
+					<p>Some Drawbacks:</p>
+					<small>
+						<ol>
+							<li>People won't care about terraform code provided by scaffolding. (A)</li>
+							<li>It requires some maintenance both the "Ska" and templates (upgrading packages).</li>
+							<li>It imposes a certain structure or architecture on the project, which may not always
+								align
+								with the specific requirements of the project
+						</ol>
+					</small>
+					<aside class="notes">test note</aside>
+				</section>
+				<section data-auto-animate>
+					<p>And good things:</p>
+					<small>
+					</small>
+					<aside class="notes">test note</aside>
+				</section>
+				<section data-auto-animate>
+					<p>And good things:</p>
+					<small>
+						<ol>
+							<li>Applying company-wide defaults related to infrastructure (like cloud armor policies) can
+								be
+								provided out of the box. (But for new projects only)</li>
+							<li>Possibility to document the template with a explanation why we have in terraform the
+								stuff 
+								we have. It may help the others to become more aware about the infrastructure.</li>
+							<li>Rapid Development: Scaffolding provides a head start by generating the initial
+								structure,
+								configuration, and setup for a new project.</li>
+							<li>You own the code</li>
+						</ol>
+					</small>
+				</section>
+			</section>
+			<section data-auto-animate>
+				<p>Todos:</p>
+				<small>
+					<ol>
+						<li>Add more templates including NodeJS</li>
+						<li>Add more to "ignite go" template (like postgres + multitenancy or GRPC integrations)</li>
+						<li>Integrate with git and add Web UI, deploy it internaly </li>
+						<li>Make it possible to have templates in a dedicated Github repo, so the ska won't have them and can be still open source.</li>
+					</ol>
+				</small>
+				<aside class="notes">test note</aside>
+			</section>
+		</div>
+	</div>
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
