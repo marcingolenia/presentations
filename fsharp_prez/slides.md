@@ -87,8 +87,8 @@ const author = reactive({
 
 ---
 
-# Components
-<Tweet id="1390115482657726468" scale="0.65" />
+<Tweet id="1854994763164139923" scale="0.85" />
+
 ---
 
 
