@@ -1,23 +1,17 @@
 ---
-# You can also start simply with 'default'
 background: ./flogo.png
-# some information about your slides (markdown enabled)
 title: Welcome to Good Function
-# apply unocss classes to the current slide
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-up
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+colorSchema: dark
 ---
 
 # Welcome to Good Function
 
 and the very first lecture!
-
 
 <div class="abs-br m-6 text-xl">
   <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
@@ -33,13 +27,13 @@ The last comment block of each slide will be treated as slide notes. It will be 
 transition: slide-up
 layout: center
 class: text-center
+
 ---
 
 <picture>
   <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f917/512.webp" type="image/webp">
   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f917/512.gif" alt="🤗" width="300" height="300">
 </picture>
-
 
 ---
 
@@ -53,35 +47,37 @@ Add multiple code blocks and wrap them with <code>````md magic-move</code> (four
 ```ts {2}
 // step 1
 const author = reactive({
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+});
 ```
+
 ```ts {3-4}
 // step 1
 const author = reactive({
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+});
 ```
+
 ```ts
 // step 1
 const author = reactive({
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+});
 ```
 ````
 
@@ -91,8 +87,8 @@ const author = reactive({
 
 ---
 
-
 ---
 
 # Questions?
+
 <Toc columns="3"/>
