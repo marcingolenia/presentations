@@ -1,11 +1,10 @@
-type Suit = | Spades | Clubs | Diamonds | Hearts // Union type is choice - pick one 
+type Suit = | Spades | Clubs | Diamonds | Hearts
   
 type Rank = | Two  | Three | Four  | Five  | Six  | Seven | Eight
-            | Nine | Ten | Jack | Queen | King | Ace
+            | Nine | Ten | Jack | Queen | King
   
-type Card = Rank * Suit // Tuple means pair, so card has a face and suit.
-
-type Deck = Card list  // built in list type
+type Card = Rank * Suit
+type Deck = Card list
 type Hand = Card list
 type Player = { Name: string; Hand: Hand }
 type Game = { Deck: Deck; Players: Player list }

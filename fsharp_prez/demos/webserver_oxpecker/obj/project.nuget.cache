@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "rzeq7G8G0U4=",
+  "success": true,
+  "projectFilePath": "/home/marcin/code/presentations/fsharp_prez/demos/webserver_oxpecker/webserver_oxpecker.fsproj",
+  "expectedPackageFiles": [
+    "/home/marcin/.nuget/packages/fsharp.core/9.0.100/fsharp.core.9.0.100.nupkg.sha512",
+    "/home/marcin/.nuget/packages/microsoft.extensions.objectpool/9.0.0/microsoft.extensions.objectpool.9.0.0.nupkg.sha512",
+    "/home/marcin/.nuget/packages/microsoft.io.recyclablememorystream/3.0.1/microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
+    "/home/marcin/.nuget/packages/oxpecker/1.1.2/oxpecker.1.1.2.nupkg.sha512",
+    "/home/marcin/.nuget/packages/oxpecker.viewengine/1.0.1/oxpecker.viewengine.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

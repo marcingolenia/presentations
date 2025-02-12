@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "database": "db",
+            "username": "postgres",
+            "name": "local_pg"
+        }
+    ],
+    "FSharp.inlayHints.typeAnnotations": false,
+    "editor.inlayHints.enabled": "offUnlessPressed"
+}

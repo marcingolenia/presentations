@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fvXq/bNTB9g=",
+  "success": true,
+  "projectFilePath": "/home/marcin/code/presentations/fsharp_prez/demos/webserver/webserver.fsproj",
+  "expectedPackageFiles": [
+    "/home/marcin/.nuget/packages/falco/5.0.0-rc1/falco.5.0.0-rc1.nupkg.sha512",
+    "/home/marcin/.nuget/packages/falco.markup/1.1.1/falco.markup.1.1.1.nupkg.sha512",
+    "/home/marcin/.nuget/packages/fsharp.core/9.0.100/fsharp.core.9.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}

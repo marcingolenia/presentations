@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "sFcUeQdIB7Q6rg6KGA7tDw9o3Y84v1fNOy2NxHnt2mE=",
+  "Source": "webserver_oxpecker",
+  "BasePath": "_content/webserver_oxpecker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
