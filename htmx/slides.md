@@ -325,14 +325,14 @@ layout: center
 ---
 
 # HTMX example 1: validation
-```html
+```html  {all|5|6|7|8|all}
 <p>
   <label for="email">Email</label>
   <input name="email" id="email" type="email"
+    placeholder="Email" value="{{contact.email}}"
     hx-get="/contacts/{{contact.id}}/email"
-    hx-target="next .error"
     hx-trigger="change, keyup delay:200ms changed"
-    placeholder="Email" value="{{contact.email}}">
+    hx-target="next .error">
   <span class="error">{{contact.errors['email']}}</span>
 </p>
 ```
@@ -343,16 +343,16 @@ layout: center
 ---
 
 # HTMX example 2: Edit
-```html
+```html {3-11|12-19|all}
 <form>
     <article class="focus-dim">
         <header class="action-header">
             <span>Beneficjenci</span>
             <div class="action-header-actions">
                 <button hx-get="/organizations/105/beneficjenci" hx-target="closest article" hx-swap="outerHTML">
-                    // icon svg boilerplate
+                    // cancel-icon svg boilerplate
                 <button hx-put="/organizations/105/beneficjenci" hx-target="closest article" hx-swap="outerHTML">
-                    // icon svg boilerplate
+                    // ok-icon svg boilerplate
             </div>
         </header>
         <p>
@@ -400,9 +400,9 @@ layout: center
 
 # HTMX example 3: Implementation details (2/2)
 
-```fsharp
+```fsharp {13|2|5|6|7|all}
 //router.fs
-let summaries (readSummaries: ReadOrganizationSummaries) : EndpointHandler =
+let serveSummaries (readSummaries: Filter -> Task<OrganizationSummary list>) : EndpointHandler =
     fun ctx ->
         task {
             let filter = ctx |> parseFilter
@@ -413,7 +413,7 @@ let summaries (readSummaries: ReadOrganizationSummaries) : EndpointHandler =
 let Endpoints (dependencies: Dependencies) =
     [ GET
           [ route "/" indexPage
-            route "/summaries" (summaries dependencies.ReadOrganizationSummaries)
+            route "/summaries" (serveSummaries dependencies.ReadOrganizationSummaries)
             // ... more routes
           ]
       POST ...
@@ -491,18 +491,18 @@ layout: center
 # Strategy 2: Out of band swaps
 
 
-```html
+```html {1-3|4-6|7-12}
 <div>
- Item added to cart
+  Item added to cart
 </div>
 <div id="cartItemsCount" hx-swap-oob="true">
-    2
+  2
 </div>
 <div id="cartItemsPreview" hx-swap-oob="true">
-    <li>
-      ...
-    </li>
+  <li>
     ...
+  </li>
+  ...
 </div>
 ```
 
@@ -562,7 +562,7 @@ layout: center
 # Recent example from my work:
 <img src="/img/febe.png" style="width:700px">
 
-<!-- Separate tasks, separate PRs, kompatybilnosc, osobne testy, osobne CI/CD -->
+<!-- Separate tasks, separate PRs, kompatybilnosc, osobne testy, osobne CI/CD, One app is simpler than 2 apps (versioning, permissions, localization, infra, deployments,...) -->
 
 ---
 transition: slide-up
@@ -610,7 +610,7 @@ class: text-center
 <li>Learn <b><<span color="blue">/</span>htm<span color="blue">x</span>></b> once, use it with programming language you love.</li>
 <li>With SSR and <b><<span color="blue">/</span>htm<span color="blue">x</span>></b> lack of client state managment is not a blocker.</li>
 <li>With SSR and <b><<span color="blue">/</span>htm<span color="blue">x</span>></b> rich UI like active search, page transitions, fast navigation with good UX is possible and simple!</li>
-<li>One app is simpler than 2 apps (versioning, localization, infra, deployments,...)</li>
+<li>One app is simpler than 2 apps (versioning, permissions, localization, infra, deployments,...)</li>
 </ol>
 </small>
 
